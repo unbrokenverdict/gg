@@ -126,14 +126,14 @@
 .paper::before {
     right: 0.5rem;
     top: 0;
-    transform: rotate(-1deg);
+    transform: rotate(-0.5deg);
     z-index: -1;
 }
 
 .paper::after {
     top: 0.25rem;
     right: -0.25rem;
-    transform: rotate(1deg);
+    transform: rotate(0.3deg);
     z-index: -2;
 }
 
