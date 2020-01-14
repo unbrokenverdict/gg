@@ -1,0 +1,168 @@
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem 2rem;
+    max-width: 75rem;
+}
+
+.cont-full {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.item-h-c {
+    justify-content: center;
+}
+
+.item-v-c {
+    align-items: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.tilt-l-1 {
+    transform: rotate(-1deg);
+}
+
+.tilt-r-1 {
+    transform: rotate(1deg);
+}
+
+.tilt-l-2 {
+    transform: rotate(-2deg);
+}
+
+.tilt-r-2 {
+    transform: rotate(2deg);
+}
+
+.tilt-l-3 {
+    transform: rotate(-3deg);
+}
+
+.tilt-r-3 {
+    transform: rotate(3deg);
+}
+
+.img-medium {
+    width: 50%;
+    max-width: 20rem;
+}
+
+.img-polaroid {
+    width: 50%;
+    padding: 2rem 2.5rem 3rem 2.5rem;
+}
+
+.img-polaroid-inner {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0.25rem solid rgb(25, 25, 25);
+    box-shadow: 1px 2px 4px rgba(45, 45, 45, 0.8);
+}
+
+.img-capture {
+    width: 100%;
+}
+
+.img-caption {
+    padding: 0.75rem 0;
+}
+
+@media screen and (max-width: 568px) {
+    .img-small {
+        width: 5rem;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.paper {
+    background: rgb(245, 240, 238);
+    box-shadow: 1px 1px 4px rgba(45, 45, 45, 0.8);
+}
+
+.paper::before,
+.paper::after {
+    background-color: rgb(245, 240, 238);
+    box-shadow: 1px 1px 4px rgba(45, 45, 45, 0.8);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 99%;
+}
+
+.paper::before {
+    right: 0.5rem;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+}
+
+.paper::after {
+    top: 0.25rem;
+    right: -0.25rem;
+    transform: rotate(1deg);
+    z-index: -2;
+}
+
+.ref {
+    font-size: 1rem;
+    color: rgb(45, 45, 45);
+    padding: 0.75rem 1rem;
+    position: absolute;
+    top: 0;
+}
+
+.ref-classification {
+    font-size: 1.15rem;
+    left: 0;
+}
+
+.ref-num {
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .ref-classification {
+        position: relative;
+        font-size: 1rem;
+    }
+
+    .ref-num {
+        position: relative;
+        left: 0;
+        font-size: 0.85rem;
+    }
+}
